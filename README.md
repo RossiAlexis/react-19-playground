@@ -1,6 +1,6 @@
-# masters.dev — React
+# React 19 playground
 
-A collection of standalone React exercises exploring different rendering and concurrency patterns, built while working through the [EpicReact.dev](https://www.epicreact.dev/) material.
+A collection of standalone React exercises exploring different rendering and concurrency patterns..
 
 Each folder below is its own independent project with its own `package.json` and dependencies. Run `npm install` inside a project folder before using its scripts, or run the root convenience scripts below (they just delegate into the subfolder).
 
