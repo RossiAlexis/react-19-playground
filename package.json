@@ -1,0 +1,22 @@
+{
+  "name": "masters-dev-react",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Collection of React exercises/projects (EpicReact.dev style): deferred values, optimistic UI, transitions, React performance, SSR, SSG, React Server Components without a framework, and a Next.js app.",
+  "scripts": {
+    "dev:deferred": "npm --prefix deferred run dev",
+    "dev:optimistic:client": "npm --prefix optimistic run dev:client",
+    "dev:optimistic:server": "npm --prefix optimistic run dev:server",
+    "dev:transitions:client": "npm --prefix transitions run dev:client",
+    "dev:transitions:server": "npm --prefix transitions run dev:server",
+    "dev:react-performance": "npm --prefix react-performance run dev",
+    "dev:rsc-no-framework:client": "npm --prefix rsc-no-framework run dev:client",
+    "dev:rsc-no-framework:server": "npm --prefix rsc-no-framework run dev:server",
+    "build:ssg": "node ssg/build.js",
+    "build:ssr": "npm --prefix ssr run build",
+    "start:ssr": "npm --prefix ssr run start",
+    "dev:next-js": "npm --prefix next-js run dev",
+    "build:next-js": "npm --prefix next-js run build",
+    "start:next-js": "npm --prefix next-js run start"
+  }
+}
