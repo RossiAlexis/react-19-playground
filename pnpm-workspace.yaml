@@ -1,0 +1,14 @@
+packages:
+  - deferred
+  - optimistic
+  - transitions
+  - react-performance
+  - rsc-no-framework
+  - ssg
+  - ssr
+  - next-js
+allowBuilds:
+  esbuild: true
+  sharp: true
+  sqlite3: true
+  unrs-resolver: true

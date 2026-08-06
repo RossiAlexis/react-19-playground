@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Collection of React exercises/projects (EpicReact.dev style): deferred values, optimistic UI, transitions, React performance, SSR, SSG, React Server Components without a framework, and a Next.js app.",
+  "packageManager": "pnpm@11.9.0",
   "scripts": {
     "dev:deferred": "npm --prefix deferred run dev",
     "dev:optimistic:client": "npm --prefix optimistic run dev:client",

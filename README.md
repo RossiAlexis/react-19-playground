@@ -21,9 +21,23 @@ Some projects (`optimistic`, `transitions`, `rsc-no-framework`) split client and
 
 ## Setup
 
+With npm, per project:
+
 ```bash
 cd <project-folder>
 npm install
 ```
 
-Run this in each project folder you want to try before using its script above.
+With pnpm, this repo is a [pnpm workspace](pnpm-workspace.yaml) — install everything at once from the root:
+
+```bash
+pnpm install
+```
+
+Then run any project's script either through its filter name or by `cd`-ing in:
+
+```bash
+pnpm --filter deferred run dev
+# or
+cd deferred && pnpm run dev
+```
