@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useDeferredValue } from "react";
 import Slider from "./Slider";
 import DisplayImage from "./DisplayImage";
 

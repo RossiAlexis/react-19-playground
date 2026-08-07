@@ -8,16 +8,16 @@ Each folder below is its own independent project with its own `package.json` and
 
 | Folder | Topic | Run |
 | --- | --- | --- |
-| `deferred/` | `useDeferredValue` | `npm run dev:deferred` |
-| `optimistic/` | Optimistic UI updates | `npm run dev:optimistic:client` + `npm run dev:optimistic:server` (two terminals) |
-| `transitions/` | `useTransition` / concurrent rendering | `npm run dev:transitions:client` + `npm run dev:transitions:server` (two terminals) |
-| `react-performance/` | Rendering performance patterns | `npm run dev:react-performance` |
-| `rsc-no-framework/` | React Server Components without a framework (custom Webpack + Fastify setup) | `npm run dev:rsc-no-framework:client` + `npm run dev:rsc-no-framework:server` (two terminals) |
-| `ssg/` | Static site generation from scratch | `npm run build:ssg` |
-| `ssr/` | Server-side rendering from scratch | `npm run build:ssr` then `npm run start:ssr` |
-| `next-js/` | Next.js app (App Router) | `npm run dev:next-js` |
+| `01-ssg/` | Static site generation from scratch | `npm run build:ssg` |
+| `02-ssr/` | Server-side rendering from scratch | `npm run build:ssr` then `npm run start:ssr` |
+| `03-rsc-no-framework/` | React Server Components without a framework (custom Webpack + Fastify setup) | `npm run dev:rsc-no-framework:client` + `npm run dev:rsc-no-framework:server` (two terminals) |
+| `04-rsc-with-next-js/` | Next.js app (App Router) | `npm run dev:next-js` |
+| `05-react-performance/` | Rendering performance patterns | `npm run dev:react-performance` |
+| `06-optimistic/` | Optimistic UI updates | `npm run dev:optimistic:client` + `npm run dev:optimistic:server` (two terminals) |
+| `07-deferred/` | `useDeferredValue` | `npm run dev:deferred` |
+| `08-transitions/` | `useTransition` / concurrent rendering | `npm run dev:transitions:client` + `npm run dev:transitions:server` (two terminals) |
 
-Some projects (`optimistic`, `transitions`, `rsc-no-framework`) split client and server processes — start both in separate terminals.
+Some projects (`06-optimistic`, `08-transitions`, `03-rsc-no-framework`) split client and server processes — start both in separate terminals.
 
 ## Setup
 
@@ -39,5 +39,5 @@ Then run any project's script either through its filter name or by `cd`-ing in:
 ```bash
 pnpm --filter deferred run dev
 # or
-cd deferred && pnpm run dev
+cd 07-deferred && pnpm run dev
 ```

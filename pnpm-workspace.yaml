@@ -1,12 +1,12 @@
 packages:
-  - deferred
-  - optimistic
-  - transitions
-  - react-performance
-  - rsc-no-framework
-  - ssg
-  - ssr
-  - next-js
+  - 01-ssg
+  - 02-ssr
+  - 03-rsc-no-framework
+  - 04-rsc-with-next-js
+  - 05-react-performance
+  - 06-optimistic
+  - 07-deferred
+  - 08-transitions
 allowBuilds:
   esbuild: true
   sharp: true

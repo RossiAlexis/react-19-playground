@@ -8,101 +8,34 @@ importers:
 
   .: {}
 
-  deferred:
+  01-ssg:
     dependencies:
-      '@vitejs/plugin-react':
-        specifier: 4.3.4
-        version: 4.3.4(vite@6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2))
       react:
-        specifier: 19.0.0
-        version: 19.0.0
+        specifier: ^19.2.7
+        version: 19.2.8
       react-dom:
-        specifier: 19.0.0
-        version: 19.0.0(react@19.0.0)
+        specifier: ^19.2.7
+        version: 19.2.8(react@19.2.8)
+
+  02-ssr:
+    dependencies:
+      '@fastify/static':
+        specifier: ^9.1.3
+        version: 9.3.0
+      fastify:
+        specifier: ^5.8.5
+        version: 5.11.2
+      react:
+        specifier: ^19.2.7
+        version: 19.2.8
+      react-dom:
+        specifier: ^19.2.7
+        version: 19.2.8(react@19.2.8)
       vite:
-        specifier: 6.2.0
-        version: 6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2)
+        specifier: ^8.0.16
+        version: 8.2.0(@types/node@20.19.43)(jiti@2.7.0)(terser@5.49.2)
 
-  next-js:
-    dependencies:
-      doodle.css:
-        specifier: ^0.0.2
-        version: 0.0.2
-      next:
-        specifier: 16.2.9
-        version: 16.2.9(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      promised-sqlite3:
-        specifier: ^2.1.0
-        version: 2.1.0(sqlite3@5.1.7)
-      react:
-        specifier: 19.2.4
-        version: 19.2.4
-      react-dom:
-        specifier: 19.2.4
-        version: 19.2.4(react@19.2.4)
-      sqlite3:
-        specifier: ^5.1.7
-        version: 5.1.7
-    devDependencies:
-      '@tailwindcss/postcss':
-        specifier: ^4
-        version: 4.3.3
-      '@types/node':
-        specifier: ^20
-        version: 20.19.43
-      '@types/react':
-        specifier: ^19
-        version: 19.2.18
-      '@types/react-dom':
-        specifier: ^19
-        version: 19.2.4(@types/react@19.2.18)
-      eslint:
-        specifier: ^9
-        version: 9.39.5(jiti@2.7.0)
-      eslint-config-next:
-        specifier: 16.2.9
-        version: 16.2.9(@typescript-eslint/parser@8.66.0(eslint@9.39.5(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0))(typescript@5.9.3)
-      tailwindcss:
-        specifier: ^4
-        version: 4.3.3
-      typescript:
-        specifier: ^5
-        version: 5.9.3
-
-  optimistic:
-    dependencies:
-      '@vitejs/plugin-react':
-        specifier: 4.3.4
-        version: 4.3.4(vite@6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2))
-      react:
-        specifier: 19.0.0
-        version: 19.0.0
-      react-dom:
-        specifier: 19.0.0
-        version: 19.0.0(react@19.0.0)
-      vite:
-        specifier: 6.2.0
-        version: 6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2)
-
-  react-performance:
-    dependencies:
-      '@vitejs/plugin-react':
-        specifier: 4.3.4
-        version: 4.3.4(vite@6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2))
-      marked:
-        specifier: ^15.0.7
-        version: 15.0.12
-      react:
-        specifier: 19.0.0
-        version: 19.0.0
-      react-dom:
-        specifier: 19.0.0
-        version: 19.0.0(react@19.0.0)
-      vite:
-        specifier: 6.2.0
-        version: 6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2)
-
-  rsc-no-framework:
+  03-rsc-no-framework:
     dependencies:
       '@babel/core':
         specifier: ^7.26.8
@@ -165,34 +98,101 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(webpack@5.109.2)
 
-  ssg:
+  04-rsc-with-next-js:
     dependencies:
+      doodle.css:
+        specifier: ^0.0.2
+        version: 0.0.2
+      next:
+        specifier: 16.2.9
+        version: 16.2.9(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      promised-sqlite3:
+        specifier: ^2.1.0
+        version: 2.1.0(sqlite3@5.1.7)
       react:
-        specifier: ^19.2.7
-        version: 19.2.8
+        specifier: 19.2.4
+        version: 19.2.4
       react-dom:
-        specifier: ^19.2.7
-        version: 19.2.8(react@19.2.8)
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      sqlite3:
+        specifier: ^5.1.7
+        version: 5.1.7
+    devDependencies:
+      '@tailwindcss/postcss':
+        specifier: ^4
+        version: 4.3.3
+      '@types/node':
+        specifier: ^20
+        version: 20.19.43
+      '@types/react':
+        specifier: ^19
+        version: 19.2.18
+      '@types/react-dom':
+        specifier: ^19
+        version: 19.2.4(@types/react@19.2.18)
+      eslint:
+        specifier: ^9
+        version: 9.39.5(jiti@2.7.0)
+      eslint-config-next:
+        specifier: 16.2.9
+        version: 16.2.9(@typescript-eslint/parser@8.66.0(eslint@9.39.5(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0))(typescript@5.9.3)
+      tailwindcss:
+        specifier: ^4
+        version: 4.3.3
+      typescript:
+        specifier: ^5
+        version: 5.9.3
 
-  ssr:
+  05-react-performance:
     dependencies:
-      '@fastify/static':
-        specifier: ^9.1.3
-        version: 9.3.0
-      fastify:
-        specifier: ^5.8.5
-        version: 5.11.2
+      '@vitejs/plugin-react':
+        specifier: 4.3.4
+        version: 4.3.4(vite@6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2))
+      marked:
+        specifier: ^15.0.7
+        version: 15.0.12
       react:
-        specifier: ^19.2.7
-        version: 19.2.8
+        specifier: 19.0.0
+        version: 19.0.0
       react-dom:
-        specifier: ^19.2.7
-        version: 19.2.8(react@19.2.8)
+        specifier: 19.0.0
+        version: 19.0.0(react@19.0.0)
       vite:
-        specifier: ^8.0.16
-        version: 8.2.0(@types/node@20.19.43)(jiti@2.7.0)(terser@5.49.2)
+        specifier: 6.2.0
+        version: 6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2)
 
-  transitions:
+  06-optimistic:
+    dependencies:
+      '@vitejs/plugin-react':
+        specifier: 4.3.4
+        version: 4.3.4(vite@6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2))
+      react:
+        specifier: 19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: 19.0.0
+        version: 19.0.0(react@19.0.0)
+      vite:
+        specifier: 6.2.0
+        version: 6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2)
+
+  07-deferred:
+    dependencies:
+      '@vitejs/plugin-react':
+        specifier: 4.3.4
+        version: 4.3.4(vite@6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2))
+      react:
+        specifier: 19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: 19.0.0
+        version: 19.0.0(react@19.0.0)
+      vite:
+        specifier: 6.2.0
+        version: 6.2.0(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.49.2)
+
+  08-transitions:
     dependencies:
       '@vitejs/plugin-react':
         specifier: 4.3.4
