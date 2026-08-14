@@ -1,7 +1,11 @@
-import App from "./App";
+import AppWithoutOptimistic from "./App";
 import { createRoot } from "react-dom/client";
 import AppWithOptimistic from "./AppWithOptimistic";
+
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(<AppWithOptimistic />);
+
+// Uncomment to test the issue solved above.
+// root.render(<AppWithoutOptimistic />);
